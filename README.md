@@ -21,5 +21,7 @@ The website is still under construction, and I'm actively making improvements. Y
 ## Get in Touch
 
 I'd love to hear your thoughts and reviews! Feel free to connect with me on my socials and share your feedback. Your input is greatly appreciated.
+- **Email:** hnvenky4@gmail.com
+- **Twitter:** [@\_gimmick\_\_](https://twitter.com/_gimmick__)
 
 **Cheers! 🌟**
