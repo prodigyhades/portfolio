@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900i';
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Playfair Display", serif;
+      color: #acaabe;
+      text-rendering: optimizeLegibility;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #1a1a1a;
+      font-size: 14px;
+      overflow: hidden;
+    }
+
+    .wrap {
+      perspective-origin: 50% 50%;
+    }
+
+    .page {
+      margin: 3%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 1.4vw;
+    }
+    .page h2 {
+      font-weight: bold;
+      font-size: 6.5vw;
+      font-weight: 900;
+      font-style: italic;
+      color: #dad8ec;
+    }
+
+    .svg {
+      stroke: #222221;
+      position: absolute;
+      bottom: -100vh;
+      transform-style: preserve-3d;
+    }
+
+    .svg:nth-child(1) {
+      left: 40%;
+      -webkit-animation: raise1 15s linear infinite;
+              animation: raise1 15s linear infinite;
+      -webkit-animation-delay: 0s;
+              animation-delay: 0s;
+      transform: scale(-0.3) rotate(63deg);
+      z-index: -6;
+      filter: blur(-5px);
+    }
+    @-webkit-keyframes raise1 {
+      to {
+        bottom: 150vh;
+        transform: scale(-0.3) rotate(29deg);
+      }
+    }
+    @keyframes raise1 {
+      to {
+        bottom: 150vh;
+        transform: scale(-0.3) rotate(29deg);
+      }
+    }
+
+    .svg:nth-child(2) {
+    left: 45%;
+    -webkit-animation: raise2 14s linear infinite;
+            animation: raise2 14s linear infinite;
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    transform: scale(0) rotate(80deg);
+    z-index: -5;
+    filter: blur(-4px);
+    }
+    @-webkit-keyframes raise2 {
+    to {
+        bottom: 150vh;
+        transform: scale(0) rotate(349deg);
+    }
+    }
+    @keyframes raise2 {
+    to {
+        bottom: 150vh;
+        transform: scale(0) rotate(349deg);
+    }
+    }
+
+    .svg:nth-child(3) {
+    left: 50%;
+    -webkit-animation: raise3 12s linear infinite;
+            animation: raise3 12s linear infinite;
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    transform: scale(0.3) rotate(24deg);
+    z-index: -4;
+    filter: blur(-3px);
+    }
+    @-webkit-keyframes raise3 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.3) rotate(272deg);
+    }
+    }
+    @keyframes raise3 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.3) rotate(272deg);
+    }
+    }
+
+    .svg:nth-child(4) {
+    left: 13%;
+    -webkit-animation: raise4 19s linear infinite;
+            animation: raise4 19s linear infinite;
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    transform: scale(0.6) rotate(93deg);
+    z-index: -3;
+    filter: blur(-2px);
+    }
+    @-webkit-keyframes raise4 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.6) rotate(337deg);
+    }
+    }
+    @keyframes raise4 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.6) rotate(337deg);
+    }
+    }
+
+    .svg:nth-child(5) {
+    left: 50%;
+    -webkit-animation: raise5 17s linear infinite;
+            animation: raise5 17s linear infinite;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    transform: scale(0.9) rotate(87deg);
+    z-index: -2;
+    filter: blur(-1px);
+    }
+    @-webkit-keyframes raise5 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.9) rotate(79deg);
+    }
+    }
+    @keyframes raise5 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.9) rotate(79deg);
+    }
+    }
+
+    .svg:nth-child(6) {
+    left: -16%;
+    -webkit-animation: raise6 21s linear infinite;
+            animation: raise6 21s linear infinite;
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    transform: scale(1.2) rotate(52deg);
+    z-index: -1;
+    filter: blur(0px);
+    }
+    @-webkit-keyframes raise6 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.2) rotate(235deg);
+    }
+    }
+    @keyframes raise6 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.2) rotate(235deg);
+    }
+    }
+
+    .svg:nth-child(7) {
+    left: 38%;
+    -webkit-animation: raise7 13s linear infinite;
+            animation: raise7 13s linear infinite;
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    transform: scale(1.5) rotate(178deg);
+    z-index: 0;
+    filter: blur(1px);
+    }
+    @-webkit-keyframes raise7 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.5) rotate(177deg);
+    }
+    }
+    @keyframes raise7 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.5) rotate(177deg);
+    }
+    }
+
+    .svg:nth-child(8) {
+    left: 92%;
+    -webkit-animation: raise8 19s linear infinite;
+            animation: raise8 19s linear infinite;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    transform: scale(1.8) rotate(204deg);
+    z-index: 1;
+    filter: blur(2px);
+    }
+    @-webkit-keyframes raise8 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.8) rotate(84deg);
+    }
+    }
+    @keyframes raise8 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.8) rotate(84deg);
+    }
+    }
+
+    .svg:nth-child(9) {
+    left: 35%;
+    -webkit-animation: raise9 17s linear infinite;
+            animation: raise9 17s linear infinite;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    transform: scale(2.1) rotate(268deg);
+    z-index: 2;
+    filter: blur(3px);
+    }
+    @-webkit-keyframes raise9 {
+    to {
+        bottom: 150vh;
+        transform: scale(2.1) rotate(173deg);
+    }
+    }
+    @keyframes raise9 {
+    to {
+        bottom: 150vh;
+        transform: scale(2.1) rotate(173deg);
+    }
+    }
+
+    .svg:nth-child(10) {
+    left: 32%;
+    -webkit-animation: raise10 21s linear infinite;
+            animation: raise10 21s linear infinite;
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    transform: scale(2.4) rotate(32deg);
+    z-index: 3;
+    filter: blur(4px);
+    }
+    @-webkit-keyframes raise10 {
+    to {
+        bottom: 150vh;
+        transform: scale(2.4) rotate(185deg);
+    }
+    }
+    @keyframes raise10 {
+    to {
+        bottom: 150vh;
+        transform: scale(2.4) rotate(185deg);
+    }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">  
+      <path d="m2.46177,126.39581c10.12618,-0.06577 20.25237,-0.13151 30.37857,-0.19726c0.06666,-10.3997 0.13333,-20.7994 0.19999,-31.19908c10.07782,0 20.15564,0 30.23346,0c0,-10.46351 0,-20.927 0,-31.39051c10.33589,0 20.67178,0 31.00767,0c0,-10.20827 0,-20.41656 0,-30.62485c10.20829,0 20.41656,0 30.62485,0c0,-10.20829 0,-20.41658 0,-30.62487c15.18483,0 30.36965,0 45.55448,0c0,5.10414 0,10.20829 0,15.31243c-10.08071,0 -20.16136,0 -30.24206,0c0,10.33589 0,20.67178 0,31.00769c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33589 0,20.67178 0,31.00767c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33591 0,20.6718 0,31.00767c-10.33589,0 -20.67178,0 -31.00767,0c0,10.46351 0,20.927 0,31.39049c-15.31243,0 -30.62485,0 -45.93728,0c0.68263,-5.07223 -1.16374,-10.79174 0.43769,-15.68938l0,0z" stroke-width="7" fill="none"/>
+    </svg>
+    
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">  
+      <path d="m2.46177,126.39581c10.12618,-0.06577 20.25237,-0.13151 30.37857,-0.19726c0.06666,-10.3997 0.13333,-20.7994 0.19999,-31.19908c10.07782,0 20.15564,0 30.23346,0c0,-10.46351 0,-20.927 0,-31.39051c10.33589,0 20.67178,0 31.00767,0c0,-10.20827 0,-20.41656 0,-30.62485c10.20829,0 20.41656,0 30.62485,0c0,-10.20829 0,-20.41658 0,-30.62487c15.18483,0 30.36965,0 45.55448,0c0,5.10414 0,10.20829 0,15.31243c-10.08071,0 -20.16136,0 -30.24206,0c0,10.33589 0,20.67178 0,31.00769c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33589 0,20.67178 0,31.00767c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33591 0,20.6718 0,31.00767c-10.33589,0 -20.67178,0 -31.00767,0c0,10.46351 0,20.927 0,31.39049c-15.31243,0 -30.62485,0 -45.93728,0c0.68263,-5.07223 -1.16374,-10.79174 0.43769,-15.68938l0,0z" stroke-width="7" fill="none"/>
+    </svg>
+    
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+      <path d="m2.46177,126.39581c10.12618,-0.06577 20.25237,-0.13151 30.37857,-0.19726c0.06666,-10.3997 0.13333,-20.7994 0.19999,-31.19908c10.07782,0 20.15564,0 30.23346,0c0,-10.46351 0,-20.927 0,-31.39051c10.33589,0 20.67178,0 31.00767,0c0,-10.20827 0,-20.41656 0,-30.62485c10.20829,0 20.41656,0 30.62485,0c0,-10.20829 0,-20.41658 0,-30.62487c15.18483,0 30.36965,0 45.55448,0c0,5.10414 0,10.20829 0,15.31243c-10.08071,0 -20.16136,0 -30.24206,0c0,10.33589 0,20.67178 0,31.00769c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33589 0,20.67178 0,31.00767c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33591 0,20.6718 0,31.00767c-10.33589,0 -20.67178,0 -31.00767,0c0,10.46351 0,20.927 0,31.39049c-15.31243,0 -30.62485,0 -45.93728,0c0.68263,-5.07223 -1.16374,-10.79174 0.43769,-15.68938l0,0z" stroke-width="7" fill="none"/>
+    </svg>
+    
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+      <path d="m2.46177,126.39581c10.12618,-0.06577 20.25237,-0.13151 30.37857,-0.19726c0.06666,-10.3997 0.13333,-20.7994 0.19999,-31.19908c10.07782,0 20.15564,0 30.23346,0c0,-10.46351 0,-20.927 0,-31.39051c10.33589,0 20.67178,0 31.00767,0c0,-10.20827 0,-20.41656 0,-30.62485c10.20829,0 20.41656,0 30.62485,0c0,-10.20829 0,-20.41658 0,-30.62487c15.18483,0 30.36965,0 45.55448,0c0,5.10414 0,10.20829 0,15.31243c-10.08071,0 -20.16136,0 -30.24206,0c0,10.33589 0,20.67178 0,31.00769c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33589 0,20.67178 0,31.00767c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33591 0,20.6718 0,31.00767c-10.33589,0 -20.67178,0 -31.00767,0c0,10.46351 0,20.927 0,31.39049c-15.31243,0 -30.62485,0 -45.93728,0c0.68263,-5.07223 -1.16374,-10.79174 0.43769,-15.68938l0,0z" stroke-width="7" fill="none"/>
+    </svg>
+    
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+      <path d="m2.46177,126.39581c10.12618,-0.06577 20.25237,-0.13151 30.37857,-0.19726c0.06666,-10.3997 0.13333,-20.7994 0.19999,-31.19908c10.07782,0 20.15564,0 30.23346,0c0,-10.46351 0,-20.927 0,-31.39051c10.33589,0 20.67178,0 31.00767,0c0,-10.20827 0,-20.41656 0,-30.62485c10.20829,0 20.41656,0 30.62485,0c0,-10.20829 0,-20.41658 0,-30.62487c15.18483,0 30.36965,0 45.55448,0c0,5.10414 0,10.20829 0,15.31243c-10.08071,0 -20.16136,0 -30.24206,0c0,10.33589 0,20.67178 0,31.00769c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33589 0,20.67178 0,31.00767c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33591 0,20.6718 0,31.00767c-10.33589,0 -20.67178,0 -31.00767,0c0,10.46351 0,20.927 0,31.39049c-15.31243,0 -30.62485,0 -45.93728,0c0.68263,-5.07223 -1.16374,-10.79174 0.43769,-15.68938l0,0z" stroke-width="7" fill="none"/>
+    </svg>
+    
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+      <path d="m2.46177,126.39581c10.12618,-0.06577 20.25237,-0.13151 30.37857,-0.19726c0.06666,-10.3997 0.13333,-20.7994 0.19999,-31.19908c10.07782,0 20.15564,0 30.23346,0c0,-10.46351 0,-20.927 0,-31.39051c10.33589,0 20.67178,0 31.00767,0c0,-10.20827 0,-20.41656 0,-30.62485c10.20829,0 20.41656,0 30.62485,0c0,-10.20829 0,-20.41658 0,-30.62487c15.18483,0 30.36965,0 45.55448,0c0,5.10414 0,10.20829 0,15.31243c-10.08071,0 -20.16136,0 -30.24206,0c0,10.33589 0,20.67178 0,31.00769c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33589 0,20.67178 0,31.00767c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33591 0,20.6718 0,31.00767c-10.33589,0 -20.67178,0 -31.00767,0c0,10.46351 0,20.927 0,31.39049c-15.31243,0 -30.62485,0 -45.93728,0c0.68263,-5.07223 -1.16374,-10.79174 0.43769,-15.68938l0,0z" stroke-width="7" fill="none"/>
+    </svg>
+    
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+      <path d="m2.46177,126.39581c10.12618,-0.06577 20.25237,-0.13151 30.37857,-0.19726c0.06666,-10.3997 0.13333,-20.7994 0.19999,-31.19908c10.07782,0 20.15564,0 30.23346,0c0,-10.46351 0,-20.927 0,-31.39051c10.33589,0 20.67178,0 31.00767,0c0,-10.20827 0,-20.41656 0,-30.62485c10.20829,0 20.41656,0 30.62485,0c0,-10.20829 0,-20.41658 0,-30.62487c15.18483,0 30.36965,0 45.55448,0c0,5.10414 0,10.20829 0,15.31243c-10.08071,0 -20.16136,0 -30.24206,0c0,10.33589 0,20.67178 0,31.00769c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33589 0,20.67178 0,31.00767c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33591 0,20.6718 0,31.00767c-10.33589,0 -20.67178,0 -31.00767,0c0,10.46351 0,20.927 0,31.39049c-15.31243,0 -30.62485,0 -45.93728,0c0.68263,-5.07223 -1.16374,-10.79174 0.43769,-15.68938l0,0z" stroke-width="7" fill="none"/>
+    </svg>
+    
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+      <path d="m2.46177,126.39581c10.12618,-0.06577 20.25237,-0.13151 30.37857,-0.19726c0.06666,-10.3997 0.13333,-20.7994 0.19999,-31.19908c10.07782,0 20.15564,0 30.23346,0c0,-10.46351 0,-20.927 0,-31.39051c10.33589,0 20.67178,0 31.00767,0c0,-10.20827 0,-20.41656 0,-30.62485c10.20829,0 20.41656,0 30.62485,0c0,-10.20829 0,-20.41658 0,-30.62487c15.18483,0 30.36965,0 45.55448,0c0,5.10414 0,10.20829 0,15.31243c-10.08071,0 -20.16136,0 -30.24206,0c0,10.33589 0,20.67178 0,31.00769c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33589 0,20.67178 0,31.00767c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33591 0,20.6718 0,31.00767c-10.33589,0 -20.67178,0 -31.00767,0c0,10.46351 0,20.927 0,31.39049c-15.31243,0 -30.62485,0 -45.93728,0c0.68263,-5.07223 -1.16374,-10.79174 0.43769,-15.68938l0,0z" stroke-width="7" fill="none"/>
+    </svg>
+    
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+      <path d="m2.46177,126.39581c10.12618,-0.06577 20.25237,-0.13151 30.37857,-0.19726c0.06666,-10.3997 0.13333,-20.7994 0.19999,-31.19908c10.07782,0 20.15564,0 30.23346,0c0,-10.46351 0,-20.927 0,-31.39051c10.33589,0 20.67178,0 31.00767,0c0,-10.20827 0,-20.41656 0,-30.62485c10.20829,0 20.41656,0 30.62485,0c0,-10.20829 0,-20.41658 0,-30.62487c15.18483,0 30.36965,0 45.55448,0c0,5.10414 0,10.20829 0,15.31243c-10.08071,0 -20.16136,0 -30.24206,0c0,10.33589 0,20.67178 0,31.00769c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33589 0,20.67178 0,31.00767c-10.20829,0 -20.41656,0 -30.62485,0c0,10.33591 0,20.6718 0,31.00767c-10.33589,0 -20.67178,0 -31.00767,0c0,10.46351 0,20.927 0,31.39049c-15.31243,0 -30.62485,0 -45.93728,0c0.68263,-5.07223 -1.16374,-10.79174 0.43769,-15.68938l0,0z" stroke-width="7" fill="none"/>
+    </svg>
+  </div>
+
+</body>
+</html>

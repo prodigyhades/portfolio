@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Venkatesh</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <iframe src="mainbg.html" frameborder="0"
+        style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></iframe>
+
+    <div class="top-panel" id="topPanel">
+
+        <div class="left-section" id="leftSection">
+            <img src="logo.jpg" alt="Logo" id="logo" style="border-radius: 50%; max-width: 50px;">
+            <h1>P Venkatesh</h1>
+        </div>
+
+        <div class="right-section" id="rightSection">
+            <ul>
+                <li><a href="#blog" class="blogs">Blogs &#9662;</a>
+                    <ul>
+                        <li><a href="#blog1">Google Gemini</a></li>
+                        <li><a href="#blog2">Rise of esports in India</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#honors">Honors</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="blog" class="main-page">
+        <ol>
+            <li><a href="blog1/blog1.html">Google Gemini</a>
+                <div class="blog-image">
+                    <img src="blog1/gemini.jpg" alt="Google Gemini">
+                </div>
+            </li>
+            <li><a href="blog2/blog2.html">Rise of esports in India</a>
+                <div class="blog-image">
+                    <img src="blog2/esport.jpg" alt="Esports arena">
+                </div>
+            </li>
+        </ol>
+    </div>
+    <!--=========================================================================BLOG 1 START=========================================================================-->
+    <div id="blog1" class="main-page">
+        <style>
+            #blog1 * {
+                box-sizing: border-box;
+                border-radius: 10px;
+            }
+
+            #blog1 p,
+            #blog1 ul {
+                font-size: 18px;
+                /* Adjust the font size as needed */
+                line-height: 1.6;
+                /* Adjust the line height for better readability */
+                margin-bottom: 15px;
+                /* Add some bottom margin for spacing between paragraphs */
+            }
+
+            #blog1 {
+                margin: 100px 0 0;
+                /* Adjust the top margin to give space for the topPanel */
+                color: #222222;
+            }
+
+            .header-container {
+                background-color: #ffffffe3;
+                /* Set the background color of the container to white */
+            }
+
+            .header {
+                text-rendering: optimizeLegibility;
+                text-decoration: solid;
+                padding: 1px;
+                font-size: 50px;
+                text-align: center;
+                text-shadow: 5px 5px 20px #fffefe01;
+                background: linear-gradient(90deg, #4285f4, #34a853, #fbbc05, #ea4335);
+                background-clip: text;
+                -webkit-background-clip: text;
+                /* For older browsers that use the WebKit engine */
+                color: transparent;
+                /* Set the text color to transparent */
+            }
+
+            .leftcolumn {
+                float: left;
+                width: 75%;
+            }
+
+            .rightcolumn {
+                float: left;
+                width: 25%;
+                padding-left: 20px;
+            }
+
+            .card {
+                background-color: #ffffffe3;
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+                margin-top: 20px;
+            }
+
+            .footer .social-links a {
+                margin: 0 10px;
+                text-decoration: none;
+            }
+
+            @media screen and (max-width: 800px) {
+
+                .leftcolumn,
+                .rightcolumn {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        </style>
+
+        <div class="header-container">
+            <div class="header">
+                <h5>Google Gemini: Unveiling the Future of AI</h5>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="leftcolumn">
+
+                <div class="card">
+                    <h2>Introducing Google Gemini</h2>
+                    <hr>
+                    <h4>December 15, 2023</h4>
+                    <div class="fakeimg" style="height:400px; overflow:hidden; text-align: center;">
+                        <img src="blog1/gemini.jpg" alt="Description of the image"
+                            style="width: auto; height: 100%; display: inline-block;">
+                    </div>
+                    <br>
+                    <p>Google has recently introduced its groundbreaking large language model (LLM), Google Gemini,
+                        signaling a new era in artificial intelligence. This versatile model has been eagerly awaited
+                        since
+                        its teaser in June and promises to revolutionize the way we interact with technology.
+                        In this blog post, we delve into the intricacies of Google Gemini, exploring its capabilities,
+                        applications, and how it stands out in comparison to ChatGPT.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Understanding Google Gemini</h2>
+                    <hr>
+                    <div class="fakeimg" style="height: 300px; overflow: hidden; text-align: center;">
+                        <img src="blog1/gemini2.jpg" alt="Description of the image"
+                            style="width: auto; height: 100%; display: inline-block;">
+                    </div>
+
+                    <h3>1. Gemini AI: Powering the Future</h3>
+                    <p>Google Gemini emerges as a successor to its predecessors, designed to be more powerful and
+                        capable.
+                        With a focus on multimodality across text, images, video, audio, and code, Gemini takes a giant
+                        leap
+                        forward in AI technology.
+                    </p>
+                    <h3>2. Areas of Expertise</h3>
+                    <p>Gemini showcases expertise in various domains:
+                    <ul>
+                        <li>Computer Vision</li>
+                        <li>Geospatial Science</li>
+                        <li>Human Health</li>
+                        <li>Integrated Technologies</li>
+                    </ul>
+                    </p>
+                    <h3>3. AlphaCode 2: Mastering Coding Competitions</h3>
+                    <p>Google places emphasis on coding with the introduction of AlphaCode 2. This new code-generating
+                        system outperforms
+                        its predecessor and even surpasses human experts in coding competitions.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h2>The Technical Edge</h2>
+                    <hr>
+                    <h3>4. Training on Tensor Processing Units (TPU)</h3>
+                    <p>Gemini was trained on Google's Tensor Processing Units, ensuring efficiency in terms of speed and
+                        cost.
+                        This marks a significant improvement over its predecessor, PaLM.
+                    </p>
+
+                    <h3>5. Gemini Variants: Nano, Pro, Ultra</h3>
+                    <p>
+                    <ul>
+                        <li><strong>Nano: </strong>Tailored for fast on-device braks.</li>
+                        <li><strong>Pro: </strong>A versatile option for various applications.</li>
+                        <li><strong>Ultra: </strong>The most powerful variant undergoing safety checks.</li>
+                    </ul>
+                    </p>
+
+                    <h3>6. Integration with Google Bard</h3>
+                    <p>Google Gemini seamlessly integrates with Google Bard, enhancing user interactions.
+                        This integration lays the foundation for a future of rich and nuanced human-AI interaction.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h2>Gemini in Action</h2>
+                    <hr>
+                    <h3>7. Gemini on Pixel 8 Pro: Offline Capabilities</h3>
+                    <p>Gemini Nano brings advanced features to Pixel 8 Pro, including Smart Reply and Recorder, which
+                        can be used without an internet connection.
+                    </p>
+
+                    <h3>8. Smart Reply and Summarization Features</h3>
+                    <p>
+                    <ul>
+                        <li><strong>Smart Reply: </strong>Gemini Nano powers relevant and natural responses in messaging
+                            apps.</li>
+                        <li><strong>Summarization: </strong>Recorder app uses Gemini Nano for quick audio summarization.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h2>Comparing Gemini with ChatGPT</h2>
+                    <hr>
+                    <h3>9. Gemini vs. ChatGPT: A Comparative Analysis</h3>
+                    <p>While ChatGPT has been a prominent player in the AI space, Google Gemini introduces:
+                    <ul>
+                        <li>Multimodality, excelling in text, images, audio, video, and code.</li>
+                        <li>Superior coding capabilities with AlphaCode 2.</li>
+                        <li>Training on Tensor Processing Units for enhanced efficiency.</li>
+                        <li>Integration with Bard for advanced interactions.</li>
+                    </ul>
+                    </p>
+
+                    <h3>10. Challenges and Future Developments</h3>
+                    <p>
+                    <ul>
+                        <li><strong>Ongoing Struggles: </strong>Acknowledgment of challenges in achieving higher-level
+                            reasoning skills</li>
+                        <li><strong>Gemini Ultra and Bard Advanced: </strong>Future releases promising even more
+                            advanced capabilities.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Conclusion</h2>
+                    <hr>
+                    <p>Google Gemini represents a significant stride in AI, offering a multitude of applications and
+                        capabilities.
+                        Its integration with Google Bard and the promise of future advancements make it an exciting
+                        prospect for developers,
+                        businesses, and everyday users. As Gemini continues to evolve, its impact on various industries
+                        and AI applications is sure to be profound.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About Me</h2>
+                    <hr>
+                    <div class="fakeimg" style="height:100px;">Image</div>
+                    <p>Hi, I'm Venkatesh, a computer science enthusiast and blogger. Join me on the journey of exploring
+                        the latest in technology...</p>
+                </div>
+                <!--<div class="card">
+                    <h3>Popular Post</h3>
+                    <hr>
+                    <div class="fakeimg">Image</div><br>
+                    <div class="fakeimg">Image</div><br>
+                    <div class="fakeimg">Image</div>
+                </div>-->
+                <div class="card">
+                    <h3>Follow Me</h3>
+                    <hr>
+                    <p>Stay updated with the latest tech trends. Follow me on [social media links] for more exciting
+                        content...</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="footer">
+        <h2>Connect with Me! </h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/venkatesh-patnaik/" target="_blank">
+                <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vk.patnaikuni@gmail.com" target="_blank">
+                <img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+            </a>
+        </div>
+    </div>
+
+
+    </div>
+    <!--=========================================================================BLOG 1 END, BLOG 2 START=========================================================================-->
+    <div id="blog2" class="main-page">
+        <style>
+            #blog2 {
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+            }
+
+            #blog2 header {
+                background-color: #1a1a1a94;
+                color: #FFF;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            #blog2 article {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 0 20px;
+            }
+
+            #blog2 article img {
+                display: block;
+                margin: 0 auto;
+                border-radius: 8px;
+                /* Add rounded corners if desired */
+            }
+
+            #blog2 section {
+                margin-bottom: 20px;
+            }
+
+            /*#blog2 footer {
+                background-color: #1C1C1C;
+                color: #FFF;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }*/
+        </style>
+        <header>
+            <h1>Rise of Esports in India</h1>
+            <hr>
+        </header>
+        <article>
+            <p>
+                The rise of Esports in India has been nothing short of phenomenal, marking a significant shift in the
+                country's gaming landscape.
+            </p>
+
+            <p>
+                Esports, once considered unconventional in a traditional country like India, is now experiencing a
+                remarkable surge. The segment has witnessed substantial growth, breaking barriers and creating new
+                possibilities.
+            </p>
+
+            <section>
+                <h2>Esports in Action</h2>
+                <img src="blog2/esport.jpg" alt="Esports in Action" style="width: 100%; max-height: 400px;">
+                <p>
+                    Esports tournaments and events showcase the incredible skills and teamwork of gamers. The
+                    electrifying
+                    atmosphere and the growing fanbase contribute to the thriving Esports culture in India.
+                </p>
+            </section>
+
+            <section>
+                <h2>Factors Driving the Growth</h2>
+                <p>
+                    The growth of Esports in India can be attributed to several factors. The widespread access to the
+                    internet, the proliferation of smartphones, and the availability of affordable gaming devices have
+                    played crucial roles.
+                </p>
+                <p>
+                    Interestingly, the relatively young demography of India, with a median age of 28.2 years, is
+                    contributing significantly to the rising popularity of Esports.
+                </p>
+            </section>
+
+            <section>
+                <h2>The Numbers Speak</h2>
+                <p>
+                    According to the State of Indian Gaming Report 2022, the Esports industry is on a trajectory of
+                    exponential growth. Valued at $40 million in 2022, it is projected to reach a market cap of $140
+                    million by 2027 with an estimated CAGR of 32%.
+                </p>
+                <p>
+                    The number of players in the Esports category has witnessed a fourfold increase from 150,000 in
+                    2021 to 600,000 in 2022. Projections suggest this number will reach 1,500,000 by the end of 2027,
+                    emphasizing the expanding community of gamers in India.
+                </p>
+            </section>
+
+            <section>
+                <h2>Challenges and Unconventional Paths</h2>
+                <p>
+                    Pursuing a career in Esports in a traditional country like India comes with its challenges. The
+                    societal norms and expectations often favor conventional career paths. However, the changing
+                    dynamics of the gaming industry are challenging these norms.
+                </p>
+                <p>
+                    Esports enthusiasts in India are breaking stereotypes, showcasing that pursuing one's passion for
+                    gaming can lead to successful and fulfilling careers. The support of policymakers and the growing
+                    acceptance of Esports as a legitimate profession are encouraging signs for aspiring gamers.
+                </p>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>
+                    The Esports industry in India is at a crucial juncture, poised for remarkable growth. Embracing
+                    unconventional paths in a traditional setting, gamers are redefining success and making significant
+                    contributions to the evolving gaming ecosystem.
+                </p>
+                <p>
+                    As Esports continues to gain popularity and support, it is becoming a viable career choice for
+                    individuals who dare to take the unconventional route in the gaming landscape of India.
+                </p>
+            </section>
+        </article>
+    </div>
+    <!--=========================================================================BLOG 2 END, BLOG 3 START=========================================================================-->
+    <div id="homepage" class="main-page active">
+        <div class="container">
+            <div style="position: absolute; left: 380px; top: 310px; color: #FAED26; font-size: 80px">
+                <div><b><i>Venkatesh</i></b></div>
+                <div><b><i>Patnaik</i></b></div>
+            </div>
+            <div style="position: absolute; left: 385px; top: 500px; color: #f9f9f9e2; font-size: 28px">
+                <hr>
+                <p>B.Tech. CSE (2025)</p>
+            </div>
+
+            <img src="myPicture.jpg" alt="my picture" id="myPicture" style="position: absolute; width: 20%; height: 60%; object-fit: cover; 
+            border-radius: 10px; right: 0; margin-top: 100px; margin-right: 300px;">
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <p style="font-size: 25px; text-align: center; margin: 0 auto;">🚧 The website is under construction, thank you for visiting :&#41;</p>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div id="about" class="main-page">
+        <div class="about-section">
+            <h2>Hey there! 👋</h2>
+            <p>I'm P Venkatesh, a B.Tech. Computer Science Engineering Graduate (2025) from VIT-AP University.
+                I hail from the vibrant city of Visakhapatnam in Andhra Pradesh, known for its rich maritime history.<br><br>
+                I thrive on challenges and approach every project with dedication and enthusiasm.
+                Proficient in Python, Java, and fundamental front-end languages. This website you're on right now?
+                Ah ha, that's one of my creations. My projects span a range of technologies, including Raspberry Pi,
+                Arduino, and flight controllers.<br><br>
+                Beyond academics, I have excelled in sports, e-sports, and Model United Nations.
+                I am fervent about astrophysics, and after years to come I wish to apply my knowledge in the field.<br><br>
+                When not immersed in academic or athletic pursuits, you'll find me indulging in web series, anime,
+                and memes during my free hours. While some might call my sense of humor unique, I prefer to see it as an
+                acquired taste ( ͡° ͜ʖ ͡°).
+            </p>
+
+            <div class="about-content">
+                <div class="description section">
+                    <p>Your description goes here.</p>
+                </div>
+                <div class="education section">
+                    <p>Your education information goes here.</p>
+                </div>
+                <div class="skills section">
+                    <p>Your skills information goes here.</p>
+                </div>
+                <div class="hobbies section">
+                    <p>Your hobbies information goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="works" class="main-page">
+        <h2>My Works</h2>
+        <!-- Include your works content here -->
+    </div>
+
+    <div id="honors" class="main-page">
+        <h2>Honors</h2>
+        <div class="honors-section">
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <img src="/logos/logo2.jpg" alt="Honors Image">
+            <p>A sentence about your honors.</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+<hr>
+<p>&nbsp;&nbsp;&lt;&lt;&copy; P Venkatesh &gt;&gt;</p>
+
+</html>
